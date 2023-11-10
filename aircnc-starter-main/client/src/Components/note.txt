@@ -1,0 +1,8 @@
+updateUserProfile(name,data.data.display_url)
+      .then(
+        verifyEmail().then(()=>{
+          toast.success("check email")
+          console.log("check");
+        })
+      )
+      .catch(err => console.log(err))
